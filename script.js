@@ -32,7 +32,7 @@ function displayImage(data, date) {
   const container = document.getElementById("current-image-container");
   container.innerHTML = `
         <h2>Picture on ${date}</h2>
-        <img src="${data.url}" alt="${data.title}">
+        <img src="${data.url}" class="img-fluid" alt="${data.title}">
         <h3>${data.title}</h3>
         <p>${data.explanation}</p>
     `;
